@@ -1,0 +1,15 @@
+html {
+    --background-primary: #121212;
+    --colour-primary: #ccc;
+}
+
+html[data-theme='light'] {
+    --background-primary: #eee;
+    --colour-primary: #111;
+}
+
+html {
+    transition: color 300ms, background-color 300ms;
+    background: var(--background-primary);
+    color: var(--colour-primary);
+}
